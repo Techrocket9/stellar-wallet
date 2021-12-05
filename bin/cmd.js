@@ -12,6 +12,7 @@ if (process.version.match(/v(\d+)\./)[1] < 6) {
     case 'balance':
     case 'pay':
     case 'set-inflation-pool':
+    case 'trust':
       require(`../scripts/${process.argv[2]}.js`)
       break
     default:
